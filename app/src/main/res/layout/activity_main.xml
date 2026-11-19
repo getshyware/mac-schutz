@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAC-Schutz"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Dein Handy bekommt in deinen WLANs bei jeder Verbindung eine neue, zufällige Geräteadresse (MAC-Adresse). So ist es schwerer wiederzuerkennen und zu verfolgen."
+            android:textSize="15sp" />
+
+        <!-- Hinweis für zu alte Android-Versionen -->
+        <TextView
+            android:id="@+id/tooOld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/box"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/mainPart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Status der Android-Erlaubnis -->
+            <TextView
+                android:id="@+id/approval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/box"
+                android:padding="14dp"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="WLAN schützen"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCurrent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Aktuelles WLAN übernehmen" />
+
+            <EditText
+                android:id="@+id/ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="WLAN-Name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="WLAN-Passwort"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+            <CheckBox
+                android:id="@+id/showPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passwort anzeigen" />
+
+            <CheckBox
+                android:id="@+id/wpa3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Router nutzt nur WPA3 (selten – im Zweifel aus lassen)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:alpha="0.7"
+                android:text="Offenes WLAN ohne Passwort? Dann das Passwort-Feld einfach leer lassen."
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnProtect"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/brand"
+                android:text="Schützen"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Geschützte WLANs"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Wichtig – einmal erledigen"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/box"
+                android:padding="14dp"
+                android:text="Ist dieses WLAN zusätzlich ganz normal im Handy gespeichert, nimmt Android meistens diesen alten Eintrag – dann wirkt der Schutz nicht.\n\nSo geht's:\n1. Unten auf „WLAN-Einstellungen öffnen“ tippen.\n2. Das WLAN antippen (bzw. das Zahnrad daneben).\n3. „Entfernen“ wählen.\n\nDanach verbindet sich das Handy von selbst wieder – jetzt mit Schutz. Falls Android fragt „Vorgeschlagene WLANs zulassen?“, bitte mit „Ja“ bzw. „Zulassen“ antworten."
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="WLAN-Einstellungen öffnen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:alpha="0.7"
+                android:text="Prüfen: In den WLAN-Einstellungen beim verbundenen WLAN auf das Zahnrad tippen. Die dort angezeigte MAC-Adresse ändert sich nach dem Trennen und neu Verbinden."
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:text="Ohne Werbung · ohne Tracking · ohne Internetzugriff"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'de.macschutz'
+    compileSdk 36
+
+    defaultConfig {
+        // Eindeutige Kennung im Play Store/F-Droid – auf eigener Domain (getshyware.com).
+        applicationId 'com.getshyware.macschutz'
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // Signiert wird über Build › Generate Signed App Bundle / APK mit dem eigenen Schlüssel.
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+// Keine externen Bibliotheken: kein Tracking, keine Werbung, kein Internet.
+dependencies {
+}
