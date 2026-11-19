@@ -1,0 +1,1 @@
+Technical changes so F-Droid can rebuild the app identically. No new features.
