@@ -1,0 +1,17 @@
+MAC-Schutz makes your phone use a new random device address (MAC address) every time it connects to your Wi-Fi networks. This makes it harder to recognize and track over time – no root needed.
+
+Since Android 10 the phone uses a random address per network, but it usually stays the same for that network. MAC-Schutz adds your networks as network suggestions with non-persistent MAC randomization (Android 12 or newer).
+
+<b>Features</b>
+<ul>
+<li>Add a network by name and password, or take over the current one</li>
+<li>WPA2, WPA3 and open networks</li>
+<li>Overview of protected networks, remove protection at any time</li>
+</ul>
+
+<b>Privacy</b>
+No internet permission, no root, no ads, no analytics. The network name and password are only handed to Android itself. Android requires the location permission only so the app can read the name of the current network; it is optional.
+
+The app is currently available in German.
+
+A Shyware project – free software that doesn't watch you: https://getshyware.com

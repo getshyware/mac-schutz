@@ -1,0 +1,1 @@
+A new random MAC address on every Wi-Fi connection – no root needed

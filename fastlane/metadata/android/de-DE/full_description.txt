@@ -1,0 +1,15 @@
+MAC-Schutz sorgt dafür, dass Ihr Handy in Ihren WLANs bei jeder Verbindung eine neue, zufällige Geräteadresse (MAC-Adresse) verwendet. So ist es schwerer wiederzuerkennen und über längere Zeit zu verfolgen – ganz ohne Root.
+
+Seit Android 10 nutzt das Handy pro WLAN eine Zufallsadresse, die für dasselbe WLAN aber meist gleich bleibt. MAC-Schutz trägt Ihre WLANs als Netzwerkvorschläge mit „nicht dauerhafter“ Zufalls-MAC ein (Android 12 oder neuer).
+
+<b>Funktionen</b>
+<ul>
+<li>WLAN mit Name und Passwort eintragen oder das aktuelle WLAN übernehmen</li>
+<li>WPA2, WPA3 und offene WLANs</li>
+<li>Übersicht der geschützten WLANs, Schutz jederzeit entfernen</li>
+</ul>
+
+<b>Datenschutz</b>
+Keine Internet-Berechtigung, kein Root, keine Werbung, keine Analyse. Name und Passwort übergibt die App nur an Android selbst. Die Standort-Berechtigung braucht Android nur, damit die App den Namen des aktuellen WLANs lesen darf; sie ist freiwillig.
+
+Ein Projekt von Shyware – freie Software, die Sie nicht beobachtet: https://getshyware.com
